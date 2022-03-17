@@ -46,9 +46,9 @@ export default {
         {title: "Theatre"},
         {title:"Promotion"},
         {title:"Information"},
-      ]
+      ],
     }
-  }
+  },
 }
 </script>
 

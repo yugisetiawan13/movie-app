@@ -5,7 +5,7 @@
               <h2 class="white--text">{{detail.Title}} (17+)</h2>
             </v-col>
             <v-col cols="12" md="4">
-              <v-img :src="detail.Poster" class="rounded-xl" min-height="300" max-height="450"></v-img>
+              <v-img :src="detail.Poster" class="rounded-xl" min-height="300" max-height="500"></v-img>
             </v-col>
             <v-col cols="12" md="8">
                 <h4 class="white--text font-weight-regular">Release Date : {{ $moment(detail.Released).format('DD-MM-YYYY') }}</h4>
@@ -14,7 +14,7 @@
                 <h4 class="white--text font-weight-regular">Cast & Crew: {{detail.Actors}}</h4>
                 <h4 class="white--text font-weight-regular">Director: {{detail.Director}}</h4>
                 <h4 class="white--text font-weight-regular">Length: {{detail.Runtime}}</h4>
-                <h2 class="white--text mt-3 mb-2">SINOPSIS</h2>
+                <h2 class="white--text py-3">SINOPSIS</h2>
                 <h4 class="white--text font-weight-regular">{{detail.Language}}</h4>
                 <p class="white--text">{{detail.Plot}}</p>
                 <div>

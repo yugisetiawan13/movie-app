@@ -3,8 +3,8 @@
     <v-container class="pa-10">
       <v-row >
         <v-col cols="12" md="4" v-for="(item , i ) in films.slice(i,9)" :key="i" >
-            <v-card link :to="{name: 'detail' , params: {id:item.imdbID} }" class="rounded-xl" >
-                <v-img :src="item.Poster" min-height="300" max-height="450"></v-img>
+            <v-card link :to="{name: 'detail' , params: {id:item.imdbID} }" class="rounded-xl" elevation="10">
+                <v-img :src="item.Poster" min-height="300" max-height="425"></v-img>
             </v-card>
             <div class="white--text text-center mt-2">
               <h4 class="text-truncate">{{item.Title}}</h4>
@@ -43,7 +43,7 @@
       axios.get(url,{
         params:{
           apiKey:apiKey,
-          s:'Demon Slayer'
+          s: 'naruto'
         }
       }).then(res =>{
         this.films = res.data.Search
